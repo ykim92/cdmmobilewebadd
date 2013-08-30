@@ -1,16 +1,9 @@
-
 <div data-role="page">
 	<header data-role="header">
 		<h1>Status Dialog</h1>
 	</header>
 	<div data-role="content">
-		
 <?php
-//$this -> $parent
-//foreach($_FILES AS $key=>$value){
-//  echo "<br />the key is: ".$key."<br />";
-//}
-//echo '<br/>testing'.$_FILES['CISOBROWSE']['name']."<br />";
 mobilewebAddAction($this,$_FILES);
 
 function mobilewebAddAction($parent,$_FILES) {
@@ -53,34 +46,34 @@ function mobilewebAddAction($parent,$_FILES) {
     if(empty($returnMsg)){
       $returnMsg = "failure";
     }
-    
+	
 	$redirUrl = $serverProtocol.$_SERVER["HTTP_HOST"].$parent->configs["homeUrl"].$parent->cdmCustomPage.$collectionParm."?page=0";
 	
-		// status message
-		if(!empty($returnMsg)){
-			?>
-			<h1>
-			<?php
-			switch($returnMsg){
-				case "success":
-					echo "The file has been uploaded for approval!";
-					break;
-				case "failure":
-					echo "There was a problem saving the item.  Please try again.";
-					break;
-				case "uploaderror":
-					echo "There was a problem uploading the file. Please try again.";
-					break;
-				case "required":
-					echo "Both the File and the Title fields are required. Please try again.";
-					break;
-			}
-			?>
-			</h1>
+	// status message
+	if(!empty($returnMsg)){
+		?>
+		<h1>
 		<?php
+		switch($returnMsg){
+			case "success":
+				echo "The file has been uploaded for approval!";
+				break;
+			case "failure":
+				echo "There was a problem saving the item.  Please try again.";
+				break;
+			case "uploaderror":
+				echo "There was a problem uploading the file. Please try again.";
+				break;
+			case "required":
+				echo "Both the File and the Title fields are required. Please try again.";
+				break;
 		}
 		?>
-		<button data-theme="b" id="return" onclick="window.location.href='<?php echo $redirUrl;?>'" >Return</button>
+		</h1>
+	<?php
+	}
+	?>
+	<button data-theme="b" id="return" onclick="window.location.href='<?php echo $redirUrl;?>'" >Return</button>
 	</div>
 </div>
 <?php	

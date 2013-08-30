@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -92,7 +91,6 @@
 				</form>
 			</div> 
 		</div>
-
 	<script type="text/javascript">
 	var fieldnames = new Array();
 	var i = 0;
@@ -110,8 +108,6 @@
 	fieldnames[i++] = new Array("langua","Language");
 	
 	$(document).ready(function(){
-		
-		
 		$("#button").click(function(event){
         /* prevent default form submission otherwise it wants to submit twice. */
         event.preventDefault();
@@ -125,13 +121,10 @@
 			}
 		});
 	});
-
 	function bindWebAddForm(){
 		$("#cdmWebAddForm").submit();
 	}
-	  
 	</script>
-	
 	<?php
 		break;
 	}
