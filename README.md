@@ -1,7 +1,8 @@
 CONTENTdm Mobile Web Add
 ===============
 
-cdmmobilewebadd is a plugin for OCLC's CONTENTdm collection that allows you to add items to your collection on mobile devices. 
+cdmmobilewebadd is a plugin for OCLC's CONTENTdm collection that allows you to add items to your collection on mobile devices. This plugin should allow anyone with the web URL to upload files to server, but only as pending items in approval queue of the collection.
+
 
 What's Included
 --------------
@@ -10,8 +11,6 @@ What's Included
 
 'index.php' is the main webpage that displays the form for you to input file and metadata. Upon submit, it will pass the input to 'process.php', which uploads the file and metadata to your server as a Pending Item in the Approval Queue. 
 Status message of whether the upload was successful or not will be displayed, including any error messages. 
-
-The entire UI is created with jQuery Mobile and is fully customizable with jQuery Mobile's online editor, [ThemeRoller](http://jquerymobile.com/themeroller/).
 
 Installation
 ---------------
@@ -25,5 +24,10 @@ Installation
 6. Your cdmmobilewebadd plugin should be added to the collection. It is found on https://Hostname/cdm/cdmmobilewebadd/collection/Collection_Alias
 7. For your conveninece, save this link on your mobile device's web browser.
 
+Customization
+-----------------
+The entire UI is created with jQuery Mobile and is fully customizable with jQuery Mobile's online editor, [ThemeRoller](http://jquerymobile.com/themeroller/).
 
-
+Future Plan
+----------------
+A potential 'next step' from this plugin prototype is pulling up the collection's custom fields with CONTENTdm API and use those instead of the hard-coded default metadata fields. 
