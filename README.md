@@ -1,7 +1,7 @@
-CONTENTdm Mobile Web Add
+CONTENTdm Mobile Web Add Form
 ===============
 
-cdmmobilewebadd is a plugin for OCLC's CONTENTdm collection that provides a mobile-friendly interface for adding items to your collection on mobile devices. This plugin should allow anyone with the web URL to upload files to server, but only as pending items in approval queue of the collection.
+This is a plugin for OCLC's CONTENTdm collection that provides a mobile-friendly interface for adding items to your collection on mobile devices. This plugin should allow anyone with the web URL to upload files to server, but only as pending items in approval queue of the collection.
 
 
 What's Included
