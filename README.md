@@ -22,7 +22,7 @@ Installation
 4. Go to 'Manage files' and enter the "cdmmobilewebadd" directory. Go to 'Upload' tab and upload both 'index.php' and 'process.php'. Exit from the popup window. Publish.
 5. Go to 'Tools" from the sidebar navigation, and then to 'Permissions'. Enable login, and enter your username and password in the Web Add Form Username and Password fields. Publish.
 6. Your cdmmobilewebadd plugin should be added to the collection. It is found on https://Hostname/cdm/cdmmobilewebadd/collection/Collection_Alias
-7. For your conveninece, save this link on your mobile device's web browser.
+7. For your convenience, save this link on your mobile device's web browser.
 
 Customization
 -----------------
