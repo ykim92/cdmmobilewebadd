@@ -27,7 +27,3 @@ Installation
 Customization
 -----------------
 The entire UI is created with jQuery Mobile and is fully customizable with jQuery Mobile's online editor, [ThemeRoller](http://jquerymobile.com/themeroller/).
-
-Future Plan
-----------------
-A potential 'next step' from this plugin prototype would be using the collection's custom fields instead of the hard-coded default metadata fields. 
