@@ -7,9 +7,10 @@
 mobilewebAddAction($this,$_FILES);
 
 function mobilewebAddAction($parent,$_FILES) {
+    // variable for checking whether the form met the requirement of having file and title
     $allrequired = TRUE;
     
-    // gets the information array
+    // gets the webaddform input array
     $webaddPostArray = array("CISODB"=>"/".$parent->collection,"CISOHEAD"=>"","CISOTHUMB"=>"generate","CISOFILE"=>"file",
     "dmaccess"=>"","redirect"=>"/index.php","CISOMODE"=>"1");
 	
@@ -24,6 +25,7 @@ function mobilewebAddAction($parent,$_FILES) {
     if(empty($_FILES['CISOBROWSE']['name'])){
       $allrequired = FALSE;
     }
+    
     if($allrequired) {
       $webaddPostArray["CISOEXT"] = strtolower(substr($_FILES['CISOBROWSE']['name'], strrpos($_FILES['CISOBROWSE']['name'], ".")+1, strlen($_FILES['CISOBROWSE']['name'])));
       $webaddPostArray["CISOBROWSE"] = "@".$_FILES['CISOBROWSE']['tmp_name'];
@@ -46,7 +48,6 @@ function mobilewebAddAction($parent,$_FILES) {
     if(empty($returnMsg)){
       $returnMsg = "failure";
     }
-	
 	$redirUrl = $serverProtocol.$_SERVER["HTTP_HOST"].$parent->configs["homeUrl"].$parent->cdmCustomPage.$collectionParm."?page=0";
 	
 	// status message
