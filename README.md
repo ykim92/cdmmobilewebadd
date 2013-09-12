@@ -21,9 +21,9 @@ Installation
 3. Go to 'Custom Pages/Scripts' from the sidebar navigation, and then to 'Custom Pages'. Add Custom Page and enter "CDM Mobile Web Add" for Name. Save changes.
 4. Go to 'Manage files' and enter the "cdmmobilewebadd" directory. Go to 'Upload' tab and upload both 'index.php' and 'process.php'. Exit from the popup window. Publish.
 5. Go to 'Tools" from the sidebar navigation, and then to 'Permissions'. Enable login, and enter your username and password in the Web Add Form Username and Password fields. Publish.
-6. Your cdmmobilewebadd plugin should be added to the collection. It is found on https://Hostname/cdm/cdmmobilewebadd/collection/Collection_Alias
+6. Your cdmmobilewebadd plugin should be added to the collection. It is found on https://[Hostname]/cdm/cdmmobilewebadd/collection/[Collection_Alias]?page=0
 7. For your convenience, save this link on your mobile device's web browser.
 
 Customization
 -----------------
-The entire UI is created with jQuery Mobile and is fully customizable with jQuery Mobile's online editor, [ThemeRoller](http://jquerymobile.com/themeroller/).
+The entire UI is created with jQuery Mobile and is fully customizable with jQuery Mobile's online editor, [ThemeRoller](http://jquerymobile.com/themeroller/). Upload the CSS file in the same cdmmobilewebadd directory.
